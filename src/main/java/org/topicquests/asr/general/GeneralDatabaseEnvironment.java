@@ -44,7 +44,7 @@ public class GeneralDatabaseEnvironment extends RootEnvironment {
 	 * @param schemaName 
 	 */
 	public GeneralDatabaseEnvironment(String schemaName) {
-		super("postgress-props.xml");
+		super("postgresql-props.xml");
 		String dbName = getStringProperty("DatabaseName");
 		System.out.println("DB: "+dbName);
         provider = new PostgresConnectionFactory(dbName, schemaName);
